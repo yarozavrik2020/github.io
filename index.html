@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="Calculator.css">
+</head>
+<body>
+	<div class="CalculatorDiv">
+		<table id="Table">
+			<tr id = "Table_Row">
+				<td colspan= "4">
+					<input class = "white" type="text" name="text" id="row1">
+				</td>
+				<td>
+					<button id = "MGB" onclick="MathGameOnClick()">Math game</button>
+				</td>
+				<td>
+					<div id = "RNT">
+						
+					</div>
+				</td>
+				<td>
+					<button id = "CRB" style = "display: none;" onclick="CheckResultOnClick()">Check result</button>
+				</td>
+				<td>
+					<button id="BFM" onclick="FireModeActivated()">Fire Mode</button>
+				</td>
+				<td>
+					<button id="CHFM" onclick="CheckFireModeActivated()">Check Fire Mode</button>
+				</td>
+				<td>
+					<div id="RNFM">
+						
+					</div>
+				</td>
+				
+			</tr>
+			<tr>
+				<td>
+					<button  class = "white" value="7" type="button" onclick = "OnNumberClick(this)" >7</button>
+				</td>
+				<td>
+					<button  class = "white" value="8" type="button" onclick = "OnNumberClick(this)" >8</button>
+				</td>
+				<td>
+					<button  class = "white" value="9" type="button" onclick = "OnNumberClick(this)" >9</button>
+				</td>
+				<td>
+					<button  id = "Sign" class = "white" value="*" type="button" onclick = "OnSignClick(this)" >*</button>
+				</td>
+				<td>
+					<button  class = "white" type="button" onclick = "OnClearClick()" >C</button>
+				</td>
+				<td>
+					<button  class = "white" type="button" value="^2" onclick = "CtepeniClick(this)" >х²</button>
+				</td>
+				<td>
+					<button  class = "white" type="button" value="sqrt" onclick = "KoreniClick()" >√</button>
+				</td>
+				<td>
+					<button  class = "white" type="button" value="tan()" onclick = "TangensClick()" >tan()</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class = "white" value="4" type="button" onclick = "OnNumberClick(this)" >4</button>
+				</td>
+				<td>
+					<button  class = "white" value="5" type="button" onclick = "OnNumberClick(this)" >5</button>
+				</td>
+				<td>
+					<button class = "blue" value="6" type="button" onclick = "OnNumberClick(this)" >6</button>
+				</td>
+				<td>
+					<button id = "Sign" class = "blue" value="-" type="button" onclick = "OnSignClick(this)" >-</button>
+				</td>
+				<td>
+					<button class = "blue" type="button" onclick = "OnPlusMinusClick()" >+/-</button>
+				</td>
+				<td>
+					<button class = "blue" type="button" value="^3" onclick = "CtepeniClick(this)" >x³</button>
+				</td>
+				<td>
+					<button class = "blue" value="x!" type="button" onclick = "OnFactorialClick()" >x!</button>
+				</td>
+				<td>
+					<button class = "blue" value="Rad" type="button" onclick = "OnRadClick()" >Rad()</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class = "blue" value="1" type="button" onclick = "OnNumberClick(this)" >1</button>
+				</td>
+				<td>
+					<button class = "blue" value="2" type="button" onclick = "OnNumberClick(this)" >2</button>
+				</td>
+				<td>
+					<button class = "blue" value="3" type="button" onclick = "OnNumberClick(this)" >3</button>
+				</td>
+				<td>
+					<button id = "Sign" class = "red" value="+" type="button" onclick = "OnSignClick(this)" >+</button>
+				</td>
+				<td>
+					<button class = "red" type="button" onclick = "OnProcentClick()" >%</button>
+				</td>
+				<td>
+					<button class = "red" type="button" value="sin" onclick = "TrigonometriaClick(this)" >sin()</button>
+				</td>
+				<td>
+					<button class = "red" type="button" value="1/x" onclick = "InverseClick()" >1/x</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button class = "red zero" value="0" type="button" onclick = "OnNumberClick(this)" >0</button>
+				</td>
+				<td>
+					<button class = "red" value = "." type="button" onclick = "OnNumberClick(this)" >.</button>
+				</td>
+				<td>
+					<button id = "Sign" class = "red" value="/" type="button" onclick = "OnSignClick(this)" >/</button>
+				</td>
+				<td>
+					<button class = "red" type="button" onclick = "OnPabnoClick()" >=</button>
+				</td>
+				<td>
+					<button class = "red" type="button" value="cos" onclick = "TrigonometriaClick(this)" >cos()</button>
+				</td>
+				<td>
+					<button class = "red" type="button" value="∛" onclick = "KybicKoreniClick(this)" >∛</button>
+				</td>
+			</tr>
+
+		</table>
+
+	</div>
+
+	<script type="text/javascript" src="CalculatorScript.js"></script>
+	<div id = "Fire">
+	
+	</div>
+</body>
+</html>
+

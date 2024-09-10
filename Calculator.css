@@ -1,0 +1,94 @@
+.white{
+	background-color: white;
+	border: 5px solid black;
+	color: black;
+	
+}
+.blue{
+	background-color: darkblue;
+	border: 5px solid blue;
+	color: white;
+
+}
+.red{
+	background-color: red;
+	border: 5px solid darkred;
+	color: white;
+}
+body{
+	background: linear-gradient(to bottom, blue, orangered);
+	height: 100vh;
+
+	font-family:Didot,serif;
+}
+button{
+	width: 150px;
+	height: 150px;
+	font-size: 45px;
+	border-radius: 15px;
+
+	transition: transform 0.25s ease;
+}
+input{
+	width: 500px;
+	height: 55px;
+	font-size: 45px;
+	border-radius: 15px;
+}
+.zero{
+	width: 304px;
+	height: 150px;
+}
+button:hover{
+	background-color: orange;
+	border: 5px solid orangered;
+
+	transform: rotate(45deg);
+}
+button:active{
+	transform: scale(1.5);
+	transform: translate3d(10px, 10px, 10px);
+/*	transform: skew(25deg);*/
+}
+#Sign{
+	margin-left:50px;
+}
+#MGB{
+	border-color:darkgreen;
+	background-color: green;
+	color: white;
+}
+#RNT{
+	background-color: gold;
+	border-radius: 10px;
+	font-size: 25px;
+}
+#CRB{
+	border-color:red;
+	background-color: indianred;
+	color: white;
+}
+#BFM{
+	border-color:black;
+	background-color: orangered;
+	color: white;
+}
+#CHFM{
+	border-color:greenyellow;
+	background-color: green;
+	color: white;
+}
+#RNFM{
+	background-color: gold;
+	border-radius: 10px;
+	font-size: 25px;
+}
+#Fire{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 600px;
+	height: 0px;
+	background-image: url('FireImage.png');
+	z-index: -1;
+}
